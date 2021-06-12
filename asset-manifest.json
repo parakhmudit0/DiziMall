@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/diziMall/static/css/main.49105492.chunk.css",
+    "main.js": "/diziMall/static/js/main.6f002295.chunk.js",
+    "main.js.map": "/diziMall/static/js/main.6f002295.chunk.js.map",
+    "runtime-main.js": "/diziMall/static/js/runtime-main.79a38972.js",
+    "runtime-main.js.map": "/diziMall/static/js/runtime-main.79a38972.js.map",
+    "static/css/2.d649c8cc.chunk.css": "/diziMall/static/css/2.d649c8cc.chunk.css",
+    "static/js/2.0c15df46.chunk.js": "/diziMall/static/js/2.0c15df46.chunk.js",
+    "static/js/2.0c15df46.chunk.js.map": "/diziMall/static/js/2.0c15df46.chunk.js.map",
+    "static/js/3.5f036a84.chunk.js": "/diziMall/static/js/3.5f036a84.chunk.js",
+    "static/js/3.5f036a84.chunk.js.map": "/diziMall/static/js/3.5f036a84.chunk.js.map",
+    "index.html": "/diziMall/index.html",
+    "service-worker.js": "/diziMall/service-worker.js",
+    "service-worker.js.map": "/diziMall/service-worker.js.map",
+    "static/css/2.d649c8cc.chunk.css.map": "/diziMall/static/css/2.d649c8cc.chunk.css.map",
+    "static/css/main.49105492.chunk.css.map": "/diziMall/static/css/main.49105492.chunk.css.map",
+    "static/js/2.0c15df46.chunk.js.LICENSE.txt": "/diziMall/static/js/2.0c15df46.chunk.js.LICENSE.txt",
+    "static/media/01.b1718414.jpg": "/diziMall/static/media/01.b1718414.jpg",
+    "static/media/CHOCO-X-TASY.1ac149b9.jpg": "/diziMall/static/media/CHOCO-X-TASY.1ac149b9.jpg",
+    "static/media/style.css": "/diziMall/static/media/bg.2995f3a7.jpg",
+    "static/media/back.a98e70f8.svg": "/diziMall/static/media/back.a98e70f8.svg",
+    "static/media/contact.fb04464f.png": "/diziMall/static/media/contact.fb04464f.png",
+    "static/media/final-dizi-logo-white.4908c4bf.png": "/diziMall/static/media/final-dizi-logo-white.4908c4bf.png",
+    "static/media/final-dizi-logo3.e1a6ed96.png": "/diziMall/static/media/final-dizi-logo3.e1a6ed96.png",
+    "static/media/mi-banner.61f9246c.png": "/diziMall/static/media/mi-banner.61f9246c.png",
+    "static/media/tanvee-banner.8758c01e.png": "/diziMall/static/media/tanvee-banner.8758c01e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79a38972.js",
+    "static/css/2.d649c8cc.chunk.css",
+    "static/js/2.0c15df46.chunk.js",
+    "static/css/main.49105492.chunk.css",
+    "static/js/main.6f002295.chunk.js"
+  ]
+}
