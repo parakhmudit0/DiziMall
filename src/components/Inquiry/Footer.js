@@ -1,11 +1,8 @@
 
 import React, { Component } from 'react';
-import finalDiziLogo3 from '../../assets/img/final-dizi-logo3.png'
-import miBAnner from '../../assets/img/client/mi-banner.png'
-import tanveeeBanner from '../../assets/img/client/tanvee-banner.png'
-import aboutimg2 from '../../assets/img/about-img2.png'
 import finalDiziLogoWhite from '../../assets/img/final-dizi-logo-white.png';
-import '../../assets/css/style.css';
+import {BiMap,BiPhoneCall,BiEnvelope,BiCopyright} from 'react-icons/bi';
+
 class Footer extends Component {
   render() {
 
@@ -23,8 +20,8 @@ class Footer extends Component {
                                 low budget</p>
 
                             <ul className="social-link">
-                                <li><a href="https://www.facebook.com/Dhaniksha-Solution-101718748383390/" className="d-block" target="_blank"><i className="bx bxl-facebook"></i></a></li>
-                                <li><a href="https://instagram.com/dhaniksha_solution?igshid=1tlq1f1i7txjr" className="d-block" target="_blank"><i className="bx bxl-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/Dhaniksha-Solution-101718748383390/" className="d-block" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/dhaniksha_solution?igshid=1tlq1f1i7txjr" className="d-block" target="_blank"><i className="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -48,9 +45,9 @@ class Footer extends Component {
                             <h3>Address</h3>
 
                             <ul className="footer-contact-info">
-                                <li><i className='bx bx-map'></i>New Line Gangashahar, Bikaner, Rajasthan</li>
-                                <li><i className='bx bx-phone-call'></i><a href="tel:+7014025587">7014025587</a></li>
-                                <li><i className='bx bx-envelope'></i><a href="mailto:dhanikshasolution@gmail.com">dhanikshasolution@gmail.com</a></li>
+                                <li><BiMap />New Line Gangashahar, Bikaner, Rajasthan</li>
+                                <li><BiPhoneCall/><a href="tel:+7014025587">7014025587</a></li>
+                                <li><BiEnvelope /><a href="mailto:dhanikshasolution@gmail.com">dhanikshasolution@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,7 +56,7 @@ class Footer extends Component {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center">
                         <div className="col-lg-12 col-md-12">
-                            <p><i className='bx bx-copyright'></i>2020 <strong>Apna Dizi Mall</strong> is Proudly Powered by <a target="_blank" href="https://envytheme.com/">Dhaniksha Solution</a></p>
+                            <p><BiCopyright />2020 <strong>Apna Dizi Mall</strong> is Proudly Powered by <a target="_blank" href="https://envytheme.com/">Dhaniksha Solution</a></p>
                         </div>
 
                         
