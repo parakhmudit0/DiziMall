@@ -6,8 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import choco_x_tasty from '../../assets/img/category/CHOCO-X-TASY.jpg';
 import  Contact from '../../assets/img/contact.png';
 import C01 from '../../assets/img/category/01.jpg'
-import '../../assets/css/style.css';
-import { Fragment } from 'react';
+import {BiRightArrowAlt} from 'react-icons/bi'
 
 class Product extends Component {
     render() {
@@ -47,7 +46,7 @@ class Product extends Component {
                             dots={false}
                             autoHeight={true}
                             autoplayHoverPause
-                            autoPlay
+                            autoplay
                             animateOut="fadeOut"
                             animateIn="fadeIn"
                             navText={[
@@ -57,69 +56,69 @@ class Product extends Component {
                         >
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={C01} alt="image" />
+                                    <img src={C01} alt="c01" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Brand Name</a></h3>
                                     <a href="category.html" className="link-btn">
-                                        <i className="bx bx-right-arrow-alt "></i>
+                                        <BiRightArrowAlt />
                                     </a>
                                 </div>
                             </div>
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={choco_x_tasty} alt="image" />
+                                    <img src={choco_x_tasty} alt="choco" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Brand Name</a></h3>
                                     <a href="category.html" className="link-btn">
-                                        <i className="bx bx-right-arrow-alt "></i></a>
+                                        <BiRightArrowAlt /></a>
                                 </div>
                             </div>
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={choco_x_tasty} alt="image" />
+                                    <img src={choco_x_tasty} alt="link" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Brand Name</a></h3>
                                     <a href="category.html" className="link-btn">
-                                        <i className="bx bx-right-arrow-alt "></i></a>
+                                        <BiRightArrowAlt /></a>
                                 </div>
                             </div>
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={choco_x_tasty} alt="image" />
+                                    <img src={choco_x_tasty} alt="link" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Brand Name</a></h3>
                                     <a href="category.html" className="link-btn">
-                                        <i className="bx bx-right-arrow-alt "></i></a>
+                                        <BiRightArrowAlt /></a>
                                 </div>
                             </div>
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={choco_x_tasty} alt="image" />
+                                    <img src={choco_x_tasty} alt="link" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Brand Name</a></h3>
                                     <a href="category.html" className="link-btn">
-                                        <i className="bx bx-right-arrow-alt "></i></a>
+                                        <BiRightArrowAlt /></a>
                                 </div>
                             </div>
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={choco_x_tasty} alt="image" />
+                                    <img src={choco_x_tasty} alt="link" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Brand Name</a></h3>
                                     <a href="category.html" className="link-btn">
-                                        <i className="bx bx-right-arrow-alt"></i></a>
+                                        <BiRightArrowAlt /></a>
                                 </div>
                             </div>
                         </OwlCarousel>
@@ -159,18 +158,19 @@ class Product extends Component {
                             dots={false}
                             autoHeight={true}
                             autoplayHoverPause
-                            autoPlay
+                            autoplay
                             animateOut="fadeOut"
                             animateIn="fadeIn"
                         >
                             <div className="single-portfolio-item">
                                 <a href="category.html" className="image d-block">
-                                    <img src={choco_x_tasty} alt="image" />
+                                    <img src={choco_x_tasty} alt="link" />
                                 </a>
 
                                 <div className="content">
                                     <h3><a className="category-name" href="category.html">Category Name</a></h3>
-                                    <a href="category.html" className="link-btn"><i className="bx bx-right-arrow-alt"></i></a>
+                                    <a href="category.html" className="link-btn">
+                                        <BiRightArrowAlt /></a>
                                 </div>
                             </div>
 
@@ -301,7 +301,7 @@ class Product extends Component {
                                     <div className="col-lg-12 col-4">
                                         <div className="products-details-image">
                                             <a href="#" data-fancybox="gallery">
-                                                <img src={Contact} alt="image" />
+                                                <img src={Contact} alt="link" />
                                             </a>
                                         </div>
                                     </div>

@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 import configureStore from './config/store';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/style.css';
+import './assets/css/responsive.css';
 
 const store = configureStore();
 
