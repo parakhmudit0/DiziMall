@@ -1,12 +1,14 @@
 
 import React, { Component, Fragment } from 'react';
-import '../../assets/css/style.css';
 import finalDiziLogo3 from '../../assets/img/final-dizi-logo3.png'
 import Home from './Home';
 import About from './About';
 import Product from './Product';
 import Footer from './Footer'
 import Contact from './Contact'
+import { BiUpArrowAlt } from 'react-icons/bi';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 class Inquiry extends Component {
     constructor(props) {
@@ -43,7 +45,7 @@ class Inquiry extends Component {
             <Fragment>
                 {/* <!-- Start Navbar Area --> */}
                 <div className="navbar-area navbar-style-two">
-                    <div className="dibiz-responsive-nav">
+                    {/* <div className="dibiz-responsive-nav">
                         <div className="container">
                             <div className="dibiz-responsive-menu">
                                 <div className="logo">
@@ -55,29 +57,39 @@ class Inquiry extends Component {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="dibiz-nav">
                         <div className="container">
-                            <nav className="navbar navbar-expand-md navbar-light">
-                                <a className="navbar-brand" href="index-3.html">
+                            <Navbar expand="md">
+                                <Navbar.Brand href="#home">
                                     <img src={finalDiziLogo3} alt="logo" style={{ height: 50 }} />
-                                </a>
+                                </Navbar.Brand>
+                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Collapse id="basic-navbar-nav">
+                                    <Nav>
+                                        <Nav.Item>
+                                            <a href="#home" className="nav-link active">Home </a>
+                                        </Nav.Item>
+                                        <Nav.Item>
+                                            <a href="#about" className="nav-link">About </a>
+                                        </Nav.Item>
+                                        <Nav.Item>
+                                            <a href="#product" className="nav-link">Product </a>
+                                        </Nav.Item>
+                                        <Nav.Item>
+                                            <a href="#contact" className="nav-link">Contact </a>
+                                        </Nav.Item>
+                                    </Nav>
+                                </Navbar.Collapse>
+                            </Navbar>
 
-                                <div className="collapse navbar-collapse mean-menu">
-                                    <ul className="navbar-nav">
-                                        <li className="nav-item"><a href="#home" className="nav-link active">Home </a></li>
-
-                                        <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
-
-                                        <li className="nav-item"><a href="#products" className="nav-link">Product</a></li>
-
-                                        <li className="nav-item"><a href="#Contact" className="nav-link">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
                         </div>
                     </div>
+
+
+
+
                 </div>
                 <div>
                     <Home />
@@ -86,9 +98,9 @@ class Inquiry extends Component {
                     <Contact />
                 </div>
                 <Footer />
-                    <div className={`go-top ${this.state.backToTop ?' active':''}`} onClick={this.scrollToTop}>
-                        <i className='bx bx-up-arrow-alt'></i>
-                    </div>
+                <div className={`go-top ${this.state.backToTop ? ' active' : ''}`} onClick={this.scrollToTop}>
+                    <BiUpArrowAlt />
+                </div>
             </Fragment>
         )
     }

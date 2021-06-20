@@ -1,11 +1,6 @@
 
 import React, { Component } from 'react';
-import finalDiziLogo3 from '../../assets/img/final-dizi-logo3.png'
-import miBAnner from '../../assets/img/client/mi-banner.png'
-import tanveeeBanner from '../../assets/img/client/tanvee-banner.png'
 import aboutimg2 from '../../assets/img/about-img2.png'
-import finalDiziLogoWhite from '../../assets/img/final-dizi-logo-white.png';
-import '../../assets/css/style.css';
 class About extends Component {
   render() {
     return (

@@ -409,9 +409,9 @@ Navbar Area CSS
   margin-right: 0;
 }
 
-.dibiz-nav .navbar .navbar-nav .nav-item:first-child {
+/* .dibiz-nav .navbar .navbar-nav .nav-item:first-child {
   margin-left: 0;
-}
+} */
 
 .dibiz-nav .navbar .navbar-nav .nav-item:hover a, .dibiz-nav .navbar .navbar-nav .nav-item.active a {
   color: #1f77f7;
@@ -1079,9 +1079,9 @@ Navbar Area CSS
     width: 60%;
     z-index: 999;
   }
-  .dibiz-nav {
+  /* .dibiz-nav {
     display: none;
-  }
+  } */
   .navbar-color-white .dibiz-responsive-nav .mean-container a.meanmenu-reveal {
     color: var(--whiteColor);
   }
@@ -5787,7 +5787,7 @@ blockquote::after, .blockquote::after {
       flex-wrap: wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -8931,7 +8931,7 @@ Contact Area CSS
   position: absolute;
   text-align: center;
   left: 0;
-  font-size: 40px;
+  font-size: 50px;
   color: #1f77f7;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -9156,6 +9156,13 @@ Footer Area CSS
   top: 4px;
 }
 
+.single-footer-widget .footer-contact-info li svg {
+  position: absolute;
+  left: 0;
+  color: #1f77f7;
+  top: 4px;
+}
+
 .single-footer-widget .footer-contact-info li i.bxs-inbox {
   top: 3px;
 }
@@ -9174,6 +9181,11 @@ Footer Area CSS
 .footer-bottom-area p i {
   position: relative;
   top: 1.4px;
+}
+
+.footer-bottom-area p svg {
+  position: relative;
+  top: -1px;
 }
 
 .footer-bottom-area p a {
