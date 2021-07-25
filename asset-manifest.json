@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DiziMall/static/css/main.e5f5faff.chunk.css",
-    "main.js": "/DiziMall/static/js/main.8322a0e7.chunk.js",
-    "main.js.map": "/DiziMall/static/js/main.8322a0e7.chunk.js.map",
+    "main.js": "/DiziMall/static/js/main.e982f68e.chunk.js",
+    "main.js.map": "/DiziMall/static/js/main.e982f68e.chunk.js.map",
     "runtime-main.js": "/DiziMall/static/js/runtime-main.91d39097.js",
     "runtime-main.js.map": "/DiziMall/static/js/runtime-main.91d39097.js.map",
     "static/css/2.894fdf5a.chunk.css": "/DiziMall/static/css/2.894fdf5a.chunk.css",
@@ -34,6 +34,6 @@
     "static/css/2.894fdf5a.chunk.css",
     "static/js/2.48aba578.chunk.js",
     "static/css/main.e5f5faff.chunk.css",
-    "static/js/main.8322a0e7.chunk.js"
+    "static/js/main.e982f68e.chunk.js"
   ]
 }
