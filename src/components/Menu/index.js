@@ -10,28 +10,15 @@ import { BiUpArrowAlt } from 'react-icons/bi';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-import ViewMore from '../Common/ViewMore';
-
-
 class Inquiry extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            backToTop: false,
-            isShowViewMore: false
+            backToTop: false
         }
-        this.changeViewMore=this.changeViewMore.bind(this);
     }
     componentDidMount() {
         window.addEventListener('scroll', this.toggleVisible);
-    }
-
-    changeViewMore = (isShowViewMore) =>{
-        this.setState({isShowViewMore})
-    }
-
-    onMenuClick = (view) =>{
-        document.getElementById(view).scrollIntoView();
     }
 
     toggleVisible = () => {
@@ -43,6 +30,9 @@ class Inquiry extends Component {
             this.setState({ backToTop: false })
         }
     };
+    onMenuClick = (view) =>{
+        document.getElementById(view).scrollIntoView();
+    }
 
     scrollToTop = () => {
         window.scrollTo({
@@ -50,14 +40,12 @@ class Inquiry extends Component {
             behavior: 'smooth'
         });
     };
-
-
     render() {
 
         return (
             <Fragment>
+                {/* <!-- Start Navbar Area --> */}
                 <div className="navbar-area navbar-style-two">
-
                     <div className="dibiz-nav">
                         <div className="container">
                             <Navbar expand="md">
@@ -67,8 +55,7 @@ class Inquiry extends Component {
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav>
-                                        <Nav.Item>
-
+                                    <Nav.Item>
                                             <span onClick={()=>this.onMenuClick('home')} className="nav-link active">Home </span>
                                         </Nav.Item>
                                         <Nav.Item>
@@ -79,7 +66,6 @@ class Inquiry extends Component {
                                         </Nav.Item>
                                         <Nav.Item>
                                         <span onClick={()=>this.onMenuClick('Contact')} className="nav-link">Contact </span>
-
                                         </Nav.Item>
                                     </Nav>
                                 </Navbar.Collapse>
@@ -89,17 +75,14 @@ class Inquiry extends Component {
                     </div>
 
 
+
+
                 </div>
                 <div>
-                    {this.state.isShowViewMore && <ViewMore />}
-                    {!this.state.isShowViewMore &&
-                        <Fragment>
-                            <Home />
-                            <About />
-                            <Product changeViewMore={this.changeViewMore}/>
-                            <Contact />
-                        </Fragment>
-                    }
+                    <Home />
+                    <About />
+                    <Product />
+                    <Contact />
                 </div>
                 <Footer />
                 <div className={`go-top ${this.state.backToTop ? ' active' : ''}`} onClick={this.scrollToTop}>

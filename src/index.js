@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 // import reportWebVitals from './reportWebVitals';
 import configureStore from './config/store';
+import history from './config/history';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 import './assets/css/responsive.css';
@@ -13,9 +16,11 @@ const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store} >
+    <Router history={history}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </Router>
   </Provider>,
   document.getElementById('root')
 );
