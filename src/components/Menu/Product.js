@@ -9,12 +9,6 @@ import C01 from '../../assets/img/category/01.jpg'
 import {BiRightArrowAlt} from 'react-icons/bi'
 
 class Product extends Component {
-
-    redirectToWhatsapp = () =>{
-        var u = "https://wa.me/+918560863625?text=I'm%20interested%20in%20your%20Product";                           
-        window.open(u, '_blank'); 
-    }
-
     render() {
 
         return (
@@ -186,7 +180,7 @@ class Product extends Component {
                 <section className="portfolio-area section-title-center bg-ffffff pt-100 pb-70">
                     <div className="container">
                         <div className="product-title">
-                            <h2>Health <span className="sub-title"><span className="view-more" onClick={()=>this.props.changeViewMore(true)}> (view more) </span></span></h2>
+                            <h2>Health <span className="sub-title"><a href=""> (view more) </a></span></h2>
                         </div>
 
                         <div className="row">
@@ -194,21 +188,14 @@ class Product extends Component {
                                 <div className="row align-items-center product-box">
                                     <div className="col-lg-12 col-4">
                                         <div className="products-details-image">
-                                            <a href="#" data-fancybox="gallery">
-                                                <img src={Contact} alt="image" />
+                                            <a>
+                                                <img src={Contact} alt="link" />
                                             </a>
                                         </div>
                                     </div>
                                     <div className="col-lg-12 col-8 pl-0">
                                         <div className="products-details-desc">
                                             <h3>Motivational Book Cover</h3>
-                                            <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
-                                            </div>
-                                            <div className="products-add-to-cart">
-                                                <button type="submit" className="default-btn">Inquiry</button>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +205,7 @@ class Product extends Component {
                                 <div className="row align-items-center product-box">
                                     <div className="col-lg-12 col-4">
                                         <div className="products-details-image">
-                                            <a href="#" data-fancybox="gallery">
+                                            <a href="#">
                                                 <img src={Contact} alt="image" />
                                             </a>
                                         </div>
@@ -226,20 +213,10 @@ class Product extends Component {
                                     <div className="col-lg-12 col-8 pl-0">
                                         <div className="products-details-desc">
                                             <h3>Motivational Book Cover</h3>
-                                            <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
-                                            </div>
-                                            <div className="products-add-to-cart">
-                                                <button type="submit" className="default-btn">Inquiry</button>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
                 </section>
@@ -248,7 +225,7 @@ class Product extends Component {
                 <section className="portfolio-area section-title-center bg-ffffff pt-100 pb-70">
                     <div className="container">
                         <div className="product-title">
-                            <h2>Health <span className="sub-title"><span className="view-more" onClick={()=>this.props.changeViewMore(true)}> (view more) </span></span></h2>
+                            <h2>Health <span className="sub-title"><a href=""> (view more) </a></span></h2>
                         </div>
 
                         <div className="row">
@@ -256,55 +233,7 @@ class Product extends Component {
                                 <div className="row align-items-center product-box">
                                     <div className="col-lg-12 col-4">
                                         <div className="products-details-image">
-                                            <a href="#" data-fancybox="gallery">
-                                                <img src={Contact} alt="image" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12 col-8 pl-0">
-                                        <div className="products-details-desc">
-                                            <h3>Motivational Book Cover</h3>
-                                            <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
-                                            </div>
-                                            <div className="products-add-to-cart">
-                                                <button type="button" onClick={this.redirectToWhatsapp} className="default-btn hello">Inquiry</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 col-12">
-                                <div className="row align-items-center product-box">
-                                    <div className="col-lg-12 col-4">
-                                        <div className="products-details-image">
-                                            <a href="#" data-fancybox="gallery">
-                                                <img src={Contact} alt="image" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12 col-8 pl-0">
-                                        <div className="products-details-desc">
-                                            <h3>Motivational Book Cover</h3>
-                                            <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
-                                            </div>
-                                            <div className="products-add-to-cart">
-                                                <button type="submit" className="default-btn">Inquiry</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 col-12">
-                                <div className="row align-items-center product-box">
-                                    <div className="col-lg-12 col-4">
-                                        <div className="products-details-image">
-                                            <a href="#" data-fancybox="gallery">
+                                            <a href="#" >
                                                 <img src={Contact} alt="link" />
                                             </a>
                                         </div>
@@ -312,20 +241,44 @@ class Product extends Component {
                                     <div className="col-lg-12 col-8 pl-0">
                                         <div className="products-details-desc">
                                             <h3>Motivational Book Cover</h3>
-                                            <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
-                                            </div>
-                                            <div className="products-add-to-cart">
-                                                <button type="submit" className="default-btn">Inquiry</button>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <div className="row align-items-center product-box">
+                                    <div className="col-lg-12 col-4">
+                                        <div className="products-details-image">
+                                            <a href="#" data-fancybox="gallery">
+                                                <img src={Contact} alt="image" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 col-8 pl-0">
+                                        <div className="products-details-desc">
+                                            <h3>Motivational Book Cover</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <div className="row align-items-center product-box">
+                                    <div className="col-lg-12 col-4">
+                                        <div className="products-details-image">
+                                            <a href="#">
+                                                <img src={Contact} alt="link" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 col-8 pl-0">
+                                        <div className="products-details-desc">
+                                            <h3>Motivational Book Cover</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

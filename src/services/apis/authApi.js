@@ -2,6 +2,6 @@ import api from "./api";
 
 export default class AuthAPI {
     getDetail() {
-        return api.get("/todos/1");
+        return api.get("/menu/get_user");
     }
 }
