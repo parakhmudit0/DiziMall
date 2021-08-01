@@ -9,7 +9,9 @@ import Contact from './Contact'
 import { BiUpArrowAlt } from 'react-icons/bi';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+
 import ViewMore from '../Common/ViewMore';
+
 
 class Inquiry extends Component {
     constructor(props) {
@@ -55,6 +57,7 @@ class Inquiry extends Component {
         return (
             <Fragment>
                 <div className="navbar-area navbar-style-two">
+
                     <div className="dibiz-nav">
                         <div className="container">
                             <Navbar expand="md">
@@ -65,6 +68,7 @@ class Inquiry extends Component {
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav>
                                         <Nav.Item>
+
                                             <span onClick={()=>this.onMenuClick('home')} className="nav-link active">Home </span>
                                         </Nav.Item>
                                         <Nav.Item>
@@ -75,6 +79,7 @@ class Inquiry extends Component {
                                         </Nav.Item>
                                         <Nav.Item>
                                         <span onClick={()=>this.onMenuClick('Contact')} className="nav-link">Contact </span>
+
                                         </Nav.Item>
                                     </Nav>
                                 </Navbar.Collapse>
@@ -82,6 +87,7 @@ class Inquiry extends Component {
 
                         </div>
                     </div>
+
 
                 </div>
                 <div>
