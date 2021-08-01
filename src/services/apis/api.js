@@ -3,7 +3,7 @@ import AuthAPI from "./authApi";
 import storage from "../storage";
 import _ from "lodash";
 
-const BASEURL = "https://";
+const BASEURL = "https://igaurav.co.in/main/api";
 
 class API {
     __auth = new AuthAPI();

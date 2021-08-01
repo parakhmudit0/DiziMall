@@ -171,6 +171,10 @@ p:last-child {
   font-weight: 700;
 }
 
+.section-title .sub-title .view-more {
+  cursor: pointer;
+}
+
 .section-title h2 {
   margin-bottom: 0;
   font-size: 42px;
@@ -392,6 +396,17 @@ Navbar Area CSS
   padding-bottom: 25px;
 }
 
+.dibiz-nav .navbar .navbar-nav .nav-item span {
+  color: var(--blackColor);
+  font-size: 17.5px;
+  font-weight: 700;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
 .dibiz-nav .navbar .navbar-nav .nav-item a i {
   font-size: 20px;
   position: relative;
@@ -401,7 +416,11 @@ Navbar Area CSS
   margin-right: -3px;
 }
 
-.dibiz-nav .navbar .navbar-nav .nav-item a:hover, .dibiz-nav .navbar .navbar-nav .nav-item a:focus, .dibiz-nav .navbar .navbar-nav .nav-item a.active {
+.dibiz-nav .navbar .navbar-nav .nav-item a:hover, .dibiz-nav .navbar .navbar-nav .nav-item a:focus, .dibiz-nav .navbar .navbar-nav .nav-item span.active {
+  color: #1f77f7;
+}
+
+.dibiz-nav .navbar .navbar-nav .nav-item span:hover, .dibiz-nav .navbar .navbar-nav .nav-item span:focus, .dibiz-nav .navbar .navbar-nav .nav-item span.active {
   color: #1f77f7;
 }
 
@@ -4555,14 +4574,14 @@ How It's Work Area CSS
 }
 
 .how-its-work-content .inner-box .single-item::after {
-  content: "\ea17";
+  content: "\e968";
   position: absolute;
   left: 26px;
   color: var(--whiteColor);
   bottom: 10px;
   -webkit-animation: fade-down 1.5s infinite linear;
           animation: fade-down 1.5s infinite linear;
-  font-family: "boxicons" !important;
+  /* font-family: "boxicons" !important; */
   font-size: 30px;
 }
 
