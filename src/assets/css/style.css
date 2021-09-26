@@ -6625,14 +6625,15 @@ Products Details Area CSS
   border-radius: 5px;
 }
 
-.products-details-image a {
+.products-details-image span {
   display: block;
   border-radius: 5px;
 }
 
-.products-details-image a img {
+.products-details-image span img {
   border-radius: 5px;
 }
+
 
 .products-details-desc {
   padding-left: 20px;
@@ -9128,12 +9129,13 @@ Footer Area CSS
   font-weight: 600;
 }
 
-.single-footer-widget .footer-links-list li a {
+.single-footer-widget .footer-links-list li span {
   color: #ededed;
   display: inline-block;
+  cursor: pointer;
 }
 
-.single-footer-widget .footer-links-list li a:hover {
+.single-footer-widget .footer-links-list li span:hover {
   color: #1f77f7;
 }
 
@@ -9554,4 +9556,23 @@ Sidebar Modal CSS
 .product-name
 {
   font-size: 14px;
+}
+
+.sub-title.back span {
+    color: var(--blackColor);
+    cursor: pointer;
+}
+.sub-title.back span:hover {
+    color: #1f77f7;
+    text-decoration: none;
+}
+
+
+.sub-title .view-more {
+  color: var(--blackColor);
+  cursor: pointer;
+}
+.sub-title .view-more:hover {
+  color: #1f77f7;
+  text-decoration: none;
 }

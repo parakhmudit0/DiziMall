@@ -68,6 +68,5 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.0"
-  },
-  "homepage": "http://parakhmudit0.github.io/DiziMall"
+  }
 }

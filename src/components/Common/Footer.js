@@ -12,16 +12,16 @@ class Footer extends Component {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-footer-widget">
-                            <a href="index-3.html" className="logo">
+                            <span className="logo">
                                 <img src={finalDiziLogoWhite} alt="logo" style={{height:60}}  />
-                            </a>
+                            </span>
                             <p>APANA DIZI MALL The name tells us all about who we are and what our mission is. 
                                 We are a digital catalog manufacturer providing services to those who want to be digital but with a 
                                 low budget</p>
 
                             <ul className="social-link">
-                                <li><a href="https://www.facebook.com/Dhaniksha-Solution-101718748383390/" className="d-block" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="https://instagram.com/dhaniksha_solution?igshid=1tlq1f1i7txjr" className="d-block" target="_blank"><i className="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/Dhaniksha-Solution-101718748383390/" className="d-block" rel="noreferrer" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/dhaniksha_solution?igshid=1tlq1f1i7txjr" className="d-block" target="_blank" rel="noreferrer" ><i className="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -31,10 +31,10 @@ class Footer extends Component {
                             <h3>Resources</h3>
 
                             <ul className="footer-links-list">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#Services">Services</a></li>
-                                <li><a href="#Contact">Contact</a></li>
+                                <li><span onClick={()=>this.props.onMenuClick('home')} >Home</span></li>
+                                <li><span onClick={()=>this.props.onMenuClick('about')} >About</span></li>
+                                <li><span onClick={()=>this.props.onMenuClick('products')} >Products</span></li>
+                                <li><span onClick={()=>this.props.onMenuClick('Contact')} >Contact</span></li>
                             </ul>
                         </div>
                     </div>
@@ -56,14 +56,14 @@ class Footer extends Component {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center">
                         <div className="col-lg-12 col-md-12">
-                            <p><BiCopyright />2020 <strong>Apna Dizi Mall</strong> is Proudly Powered by <a target="_blank" href="https://envytheme.com/">Dhaniksha Solution</a></p>
+                            <p><BiCopyright />2020 <strong>Apna Dizi Mall</strong> is Proudly Powered by <a target="_blank" rel="noreferrer" href="https://apnadizimall.com/">Dhaniksha Solution</a></p>
                         </div>
 
                         
                     </div>
                 </div>
             </div>
-        </footer>
+            </footer>
     )
   }
 }

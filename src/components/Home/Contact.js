@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
 import {BiMap,BiPhoneCall} from 'react-icons/bi';
 import {FaUsers} from 'react-icons/fa';
 
