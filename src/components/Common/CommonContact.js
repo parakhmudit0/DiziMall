@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import _ from 'lodash';
 import {BiMap,BiPhoneCall} from 'react-icons/bi';
 import {FaUsers} from 'react-icons/fa';
 class Contact extends Component {
@@ -18,7 +19,7 @@ class Contact extends Component {
                             <BiMap />
                         </div>
                         <h3>Our Address</h3>
-                        <p>New Line Gangashahar, Bikaner, Rajasthan</p>
+                        <p>{_.get(this.props,['address'],'')}</p>
                     </div>
                 </div>
 
@@ -31,8 +32,8 @@ class Contact extends Component {
                             <BiPhoneCall />
                         </div>
                         <h3>Contact</h3>
-                        <p>Mobile: <a href="tel:+7014025587">7014025587</a></p>
-                        <p>E-mail: <a href="mailto:dhanikshasolution@gmail.com">dhanikshasolution@gmail.com</a></p>
+                        <p>Mobile: <a href={`tel:+${_.get(this.props,['mobileNumber'],'')}`}>{_.get(this.props,['mobileNumber'],'')}</a></p>
+                        <p>E-mail: <a href={`mailto:${_.get(this.props,['email'],'')}`}>{_.get(this.props,['email'],'')}</a></p>
                     </div>
                 </div>
 
@@ -47,10 +48,10 @@ class Contact extends Component {
                         <h3>Social Media</h3>
                         <div className="single-footer-widget">
                             <ul className="social-link">
-                                <li><a href="https://www.facebook.com/Dhaniksha-Solution-101718748383390/" className="d-block" target="_blank">
+                                <li><a href={_.get(this.props,['facebookLink'],'')} className="d-block" target="_blank" rel="noreferrer">
                                     <i className="fa fa-facebook"></i>
                                     </a></li>
-                                <li><a href="https://instagram.com/dhaniksha_solution?igshid=1tlq1f1i7txjr" className="d-block" target="_blank">
+                                <li><a href={_.get(this.props,['instagramLink'],'')} className="d-block" target="_blank" rel="noreferrer">
                                 <i className="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>

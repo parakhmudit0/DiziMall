@@ -1,12 +1,11 @@
 import axios from "axios";
-import AuthAPI from "./authApi";
-import storage from "../storage";
+import UserApi from "./userApi";
 import _ from "lodash";
 
 const BASEURL = "https://igaurav.co.in/main/api";
 
 class API {
-    __auth = new AuthAPI();
+    __user = new UserApi();
     api = axios.create({
         baseURL: BASEURL,
         transformRequest: [(data) => JSON.stringify(data)],
@@ -15,8 +14,8 @@ class API {
             "Content-Type": "application/json",
         },
     });
-    get auth() {
-        return this.__auth;
+    get user() {
+        return this.__user;
     }
 
     get(url, ...args) {
@@ -32,16 +31,11 @@ class API {
     }
 
     sendRequestInternal(requestFunc, url, ...args) {
-        const token = storage.get("token");
-        // if (token) {
-        //     this.api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-        // }
         return requestFunc(url, ...args)
-            .then((response) => response.data && response.data.data)
+            .then((response) => response)
             .catch((error) => {
                 if (error.response) {
                     if (_.get(error, ["response", "data", "status"], 500) === 401) {
-                        storage.clearAll();
                         window.location = "/";
                     }
                 }

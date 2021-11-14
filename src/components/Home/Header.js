@@ -31,9 +31,6 @@ class Header extends Component {
                                         <Nav.Item>
                                         <span onClick={()=>this.props.onMenuClick('Contact')} className="nav-link">Contact </span>
                                         </Nav.Item>
-                                        <Nav.Item>
-                                            <span className="nav-link" onClick={()=>this.props.history.push('/inquiry')}>Inquiry </span>
-                                        </Nav.Item>
                                     </Nav>
                                 </Navbar.Collapse>
                             </Navbar>

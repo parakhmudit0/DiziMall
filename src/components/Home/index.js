@@ -9,7 +9,7 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
 import ContactForm from './ConatctForm';
-import WorkingProcess from './WorkingProcess';
+// import WorkingProcess from './WorkingProcess';
 
 
 class HomeContainer extends Component {
@@ -57,7 +57,7 @@ class HomeContainer extends Component {
                     <About />
                     <Services />
                     <Portfolio />
-                    <WorkingProcess />
+                    {/* <WorkingProcess /> */}
                     <Contact />
                     <ContactForm />
                 </div>
