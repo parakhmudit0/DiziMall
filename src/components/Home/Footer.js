@@ -1,4 +1,7 @@
 import React, { Component,Fragment } from 'react';
+import LogoImg2 from '../../assets/img/final-dizi-logo-white.png';
+import {BiMap,BiPhoneCall,BiEnvelope,BiCopyright} from 'react-icons/bi';
+
 
 class Footer extends Component {
     render() {
@@ -9,7 +12,7 @@ class Footer extends Component {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-footer-widget">
                             <a href="index-3.html" className="logo">
-                                <img src="assets/img/final-dizi-logo-white.png" style={{height:60}} alt="" />
+                                <img src={LogoImg2} style={{height:60}} alt="" />
                             </a>
                             <p>APANA DIZI MALL The name tells us all about who we are and what our mission is.
                                 We are a digital catalog manufacturer providing services to those who want to be digital but with a
@@ -27,10 +30,10 @@ class Footer extends Component {
                             <h3>Resources</h3>
 
                             <ul className="footer-links-list">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#Services">Services</a></li>
-                                <li><a href="#Contact">Contact</a></li>
+                                <li><a  className="footerlink" href="#home">Home</a></li>
+                                <li><a  className="footerlink" href="#about">About</a></li>
+                                <li><a  className="footerlink" href="#Services">Services</a></li>
+                                <li><a  className="footerlink" href="#Contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,9 +44,9 @@ class Footer extends Component {
                             <h3>Address</h3>
 
                             <ul className="footer-contact-info">
-                                <li><i className='bx bx-map'></i>New Line Gangashahar, Bikaner, Rajasthan</li>
-                                <li><i className='bx bx-phone-call'></i><a href="tel:+7014025587">7014025587</a></li>
-                                <li><i className='bx bx-envelope'></i><a href="mailto:dhanikshasolution@gmail.com">dhanikshasolution@gmail.com</a></li>
+                                <li><BiMap />New Line Gangashahar, Bikaner, Rajasthan</li>
+                                <li><BiPhoneCall/><a href="tel:+7014025587">7014025587</a></li>
+                                <li><BiEnvelope /><a href="mailto:dhanikshasolution@gmail.com">dhanikshasolution@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>

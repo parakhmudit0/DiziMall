@@ -45,7 +45,7 @@ class Product extends Component {
                                                 <span className="new-price">{`$${_.get(obj, 'product_mrp')}`}</span>
                                             </div>
                                             <div className="products-add-to-cart">
-                                                <button type="submit" onClick={() => this.props.redirectToWhatsapp(_.get(obj, 'name', ''))} className="default-btn">Inquiry</button>
+                                                <button type="submit" onClick={() => this.props.addToCart(_.get(obj, 'product_unique_id', ''))} className="default-btn">Add to Cart</button>
                                             </div>
                                         </div>
                                     </div>

@@ -1,18 +1,18 @@
 class StoreClass {
     get(key) {
-        return localStorage.getItem(key);
+        return JSON.parse(sessionStorage.getItem(key));
     }
 
     set(key, value) {
-        localStorage.setItem(key, value);
+        sessionStorage.setItem(key, JSON.stringify(value));
     }
 
     remove(key) {
-        localStorage.removeItem(key);
+        sessionStorage.removeItem(key);
     }
 
     clearAll() {
-        localStorage.clear();
+        sessionStorage.clear();
     }
 }
 

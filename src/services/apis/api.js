@@ -1,6 +1,5 @@
 import axios from "axios";
 import UserApi from "./userApi";
-import storage from "../storage";
 import _ from "lodash";
 
 const BASEURL = "https://igaurav.co.in/main/api";
@@ -32,16 +31,11 @@ class API {
     }
 
     sendRequestInternal(requestFunc, url, ...args) {
-        const token = storage.get("token");
-        // if (token) {
-        //     this.api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-        // }
         return requestFunc(url, ...args)
             .then((response) => response)
             .catch((error) => {
                 if (error.response) {
                     if (_.get(error, ["response", "data", "status"], 500) === 401) {
-                        storage.clearAll();
                         window.location = "/";
                     }
                 }

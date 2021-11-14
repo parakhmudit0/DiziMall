@@ -4,15 +4,15 @@ import { connect } from 'react-redux';
 import _ from 'lodash';
 
 import {getUserDetail} from '../../actions/userAction';
-import Home from './Home';
-import About from '../Common/About';
-import Product from './Product';
-import Footer from '../Common/Footer';
-import Contact from '../Common/Contact';
+import Home from '../Common/CommonAdvertisments';
+import About from '../Common/CommonAbout';
+import Product from './InquiryProduct';
+import Footer from '../Common/CommonFooter';
+import Contact from '../Common/CommonContact';
 import { BiUpArrowAlt } from 'react-icons/bi';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import ViewMore from '../Common/ViewMore';
+import ViewMore from './InquiryViewMore';
 
 
 class Inquiry extends Component {
@@ -30,11 +30,11 @@ class Inquiry extends Component {
     }
 
     redirectToWhatsapp = (name) => {
-        const mobileNumber = _.get(this.props,['client','0','mobile_number'],'');
-        var u = `https://wa.me/+91${mobileNumber}?text=I'm interested in your ${name} Product`;
+        const mobileNumber = _.get(this.props,['data','client','0','mobile_number'],'');
+        var u = `https://wa.me/91${mobileNumber}?text=I'm interested in your ${name} Product`;
         window.open(u, '_blank');
     }
-
+    
     changeViewMore = (categoryName) =>{
         this.setState({isShowViewMore:categoryName},()=>{
             this.scrollToTop();
@@ -63,10 +63,11 @@ class Inquiry extends Component {
     };
 
     scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        document.documentElement.scrollTop =0;
+        // window.scrollTo({
+        //     top: 0,
+        //     behavior: 'smooth'
+        // });
     };
 
 
