@@ -7,6 +7,7 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 // import reportWebVitals from './reportWebVitals';
 import configureStore from './config/store';
 import history from './config/history';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 import './assets/css/responsive.css';
