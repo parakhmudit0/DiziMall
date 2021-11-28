@@ -39,8 +39,9 @@ class Product extends Component {
                                     <div className="col-lg-12 col-8 pl-0">
                                         <div className="products-details-desc">
                                             <h3>{_.get(obj, 'name', '')}</h3>
+                                            <span className="description">{_.get(obj,'description','')}  </span>
                                             <div className="price">
-                                                <span className="old-price">{`$${_.get(obj, 'product_mrp')}`}</span>
+                                                <span className="old-price">{`$${_.get(obj, 'product_mrp')}`}</span>&nbsp;
                                                 <span className="new-price">{`$${_.get(obj, 'product_mrp')}`}</span>
                                             </div>
                                             <div className="products-add-to-cart">
