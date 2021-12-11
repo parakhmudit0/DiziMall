@@ -1,8 +1,5 @@
-import React, { Component,Fragment } from 'react';
-import RakeshLogo from '../../assets/img/client/rakesh-logo.jpg';
-import AnkitaLogo from '../../assets/img/client/ankita-logo.png';
-import MiLogo from '../../assets/img/client/mi-logo.jpg';
-import GoliLogo from '../../assets/img/client/goli-logo.jpg';
+import React, { Component } from 'react';
+import _ from 'lodash';
 
 class Portfolio extends Component {
     render() {
@@ -15,122 +12,21 @@ class Portfolio extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-2 col-md-6 col-sm-6">
+                    {_.map(_.get(this.props,'clientData',[]),client=>{
+                        return <div key={client.user_name} className="col-lg-2 col-md-6 col-sm-6">
                         <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={RakeshLogo} alt="" />
+                            <a href={_.get(client,'order_url')} className="image d-block">
+                                <img src={_.get(client,'profile_image')} alt="" />
                             </a>
 
                             <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Health & Wellness </a></h6>
-                                <span>Enquiry Catalog</span>
-                                <a href="{{url('enquiry/health-wellness')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
+                                <h6><a className="portfolio-name" href={_.get(client,'order_url')}>{_.get(client,'user_name')}</a></h6>
+                                <span>{_.get(client,'type')}</span>
+                                <a href={_.get(client,'order_url')} className="link-btn"><i className="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={AnkitaLogo} alt="" />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html"> Ankitaa's Makeup Studio</a></h6>
-                                <span>Enquiry Catalog</span>
-                                <a href="{{url('enquiry/ankitaasmakeupstudio')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={MiLogo} />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Movin'on</a></h6>
-                                <span>Enquiry Catalog</span>
-                                <a href="http://apnadizimall.com/enquiry/movin'on" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={GoliLogo} alt="" />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Goli Vada Pav</a></h6>
-                                <span>Order Catalog</span>
-                                <a href="{{url('order/golivadapav')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={GoliLogo} alt="" />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Goli Vada Pav</a></h6>
-                                <span>Order Catalog</span>
-                                <a href="{{url('order/golivadapav')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={GoliLogo} alt="" />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Goli Vada Pav</a></h6>
-                                <span>Order Catalog</span>
-                                <a href="{{url('order/golivadapav')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={GoliLogo} alt="" />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Goli Vada Pav</a></h6>
-                                <span>Order Catalog</span>
-                                <a href="{{url('order/golivadapav')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="single-portfolio-box">
-                            <a href="single-portfolio.html" className="image d-block">
-                                <img src={GoliLogo} alt="" />
-                            </a>
-
-                            <div className="content">
-                                <h6><a className="portfolio-name" href="single-portfolio.html">Goli Vada Pav</a></h6>
-                                <span>Order Catalog</span>
-                                <a href="{{url('order/golivadapav')}}" className="link-btn"><i className="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
+                    </div> 
+                    })}
                 </div>
             </div>
         </section>

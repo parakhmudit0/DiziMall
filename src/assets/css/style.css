@@ -4173,6 +4173,11 @@ Portfolio Area CSS
   color: var(--whiteColor);
 }
 
+.single-portfolio-box:hover .content h6 .portfolio-name {
+  color: var(--whiteColor);
+}
+
+
 .single-portfolio-box:hover .content h3 a {
   color: var(--whiteColor);
 }
@@ -9611,6 +9616,7 @@ text-overflow: ellipsis;
 display: -webkit-box;
 -webkit-line-clamp: 1;
 -webkit-box-orient: vertical;
+text-transform: capitalize;
 }
 
 .pt-50 
@@ -9620,4 +9626,13 @@ padding-top: 50px;
 .pb-30
 {
   padding-bottom: 30px;
+}
+
+.required-field::after {
+  content: "*";
+  color: red;
+}
+
+.btn-block:disabled {
+  opacity: 0.4;
 }

@@ -20,7 +20,7 @@ class Services extends Component {
                                     <div className="circle-two"></div>
                                 </div>
                             </div>
-                            <h3><a href="http://apnadizimall.com/enquiry/dhaniksha-solution">Enquiry Catalog</a></h3>
+                            <h3><a href="http://apnadizimall.com/enquiry/dhaniksha-solution" target="_blank" rel="noreferrer" >Enquiry Catalog</a></h3>
                             <p>The Enquiry Catalog gives the Customer a chance to choose and find out the product of their choice. In this catalog, the customer directly connects to the seller via Whatsapp!</p>
 
                         </div>
@@ -35,7 +35,7 @@ class Services extends Component {
                                     <div className="circle-two"></div>
                                 </div>
                             </div>
-                            <h3><a href="http://apnadizimall.com/menu/dhaniksha-solution">Menu Catalog</a></h3>
+                            <h3><a href="http://apnadizimall.com/menu/dhaniksha-solution" target="_blank" rel="noreferrer" >Menu Catalog</a></h3>
                             <p>The menu catalog specially designed for hotels, restaurants, fast food corner, fast food truck or anyone who want to display their products with help of amazing UI</p>
 
                         </div>
@@ -50,7 +50,7 @@ class Services extends Component {
                                     <div className="circle-two"></div>
                                 </div>
                             </div>
-                            <h3><a href="http://apnadizimall.com/order/dhaniksha-solution">Order Catalog</a></h3>
+                            <h3><a href="http://apnadizimall.com/order/dhaniksha-solution" target="_blank" rel="noreferrer" >Order Catalog</a></h3>
                             <p>The menu catalog specially designed for hotels, restaurants, fast food corner, fast food truck or anyone who want to display their products with help of amazing UI</p>
 
                         </div>

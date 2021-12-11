@@ -33,3 +33,38 @@ export const getUserDetail = ()=>{
         })
     }
 }
+
+const getClientLoading = () => {
+    return {
+        type: actionTypes.GET_CLIENT_LOADING
+    }
+}
+const getClientLoaded = data => {
+    return {
+        type: actionTypes.GET_CLIENT_LOADED,
+        payload:data
+    }
+}
+const getClientError = err => {
+    return {
+        type: actionTypes.GET_CLIENT_ERROR,
+        payload: err
+    }
+}
+
+export const getAllClient = ()=>{
+    return dispatch=> {
+        dispatch(getClientLoading())
+        return UserService.getAllClient().then(res=>{
+            dispatch(getClientLoaded(res.data));
+            return res;
+        }).catch(err => {
+            dispatch(getClientError(err));
+            throw err;
+        })
+    }
+}
+
+export const sendContact=(data)=>{
+    return UserService.sendConatct(data);
+}
